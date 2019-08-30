@@ -143,7 +143,7 @@
 
     echo "<br><br>";
     echo "El array contiene 1 solo elemento, debido a que en la declaracion todos los indices
-    son = 1, o variantes, y por ende se superpone. El ultimo elemento superpuesto es '[ sixth value ]'. "
+    son = 1, o variantes, y por ende se superpone. El ultimo elemento superpuesto es '[ sixth value ]'. ";
     echo "<br>";
 
     echo "-------------------------------------------<br>5. <br>";
