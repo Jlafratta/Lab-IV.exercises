@@ -159,7 +159,50 @@
 
     $arrayLength = count($people);
 
-    
+    echo "<br> Ver como realizar el manejo de los arreglos.";
+
+    echo "<br>-------------------------------------------<br>6. <br>";
+
+    function isWeekend()
+    {
+        if(date("l", time()) == "Saturday" || date("l", time()) == "Sunday")
+        {
+            echo "<br> Es fin de semana<br>";
+        }else{
+            echo "<br> No es fin de semana<br>";
+        }
+    }
+
+    echo "<br> El dia de la semana es: " . date ( "l d / m / Y", time());
+    echo isWeekend();
+
+
+echo "<br>-------------------------------------------<br>7. <br>";
+
+$total_sale = 2500;
+$type_sale = "Pet";
+
+function purchase($amount, $type)
+{
+    if($amount < 200)
+    {
+        if($type == "Pet")
+        {
+            echo "No se puede realizar el envio.";
+        }else if($type == "Clothing")
+        {
+            echo "Los gastos de envio son 80 pesos.";
+        }
+    }else if ($amount <= 600)
+    {
+        echo "Los gastos de envio son 80 pesos.";
+    }else if ($amount <= 2000)
+    {
+        echo "El envio es gratis.";
+    }else{ echo "Codigo de descuento: CODEDESC33.";}
+}
+
+purchase($total_sale, $type_sale);
 
 
 ?>
@@ -167,4 +210,4 @@
 </body>
 
 
-</html>
+</html>  
