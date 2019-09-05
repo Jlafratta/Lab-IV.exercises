@@ -2,10 +2,12 @@
 <html>
 
 <head>
-
+    <title>LABORATORIO IV 2019</title>
+    <link rel="stylesheet" href="mystyles.css">
 </head>
 
 <body>
+    <h1>Trabajo Practico 3</h1>
     
 <?php
 
@@ -157,9 +159,16 @@
         ['name' => 'Epifania', 'age' => 45, 'sex' => 'f'], 
     ];
 
-    $arrayLength = count($people);
 
-    echo "<br> Ver como realizar el manejo de los arreglos.";
+
+    foreach($people as $persona)
+    {
+        foreach($persona as $x => $x_value)
+        {
+            echo $x . ": " . $x_value . "<br>";
+        }
+        echo "<br>";
+    }
 
     echo "<br><br>-------------------------------------------<br>6. <br>";
 
