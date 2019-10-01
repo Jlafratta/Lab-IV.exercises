@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <title>Ejerciocio 9</title>
+        <link rel="stylesheet" href="formStyle.css">
+
+    </head>
+
+    <body>
+
+        <form action="Ej9_script.php" method="POST">
+            <h1>Login Form</h1>
+            <div class="formcontainer">
+                <hr/>    <!-- Barra separadora -->
+                <div class="container">
+
+                    <label for="name"><strong>Name</strong></label>
+                    <input type="text" placeholder="Enter your name" name="name" required> <!--El required exige que se complete el campo -->
+                    
+                    <label for="age"><strong>Age</strong></label>
+                    <input type="number" placeholder="Enter your age" name="age" min="1" max="199" required>
+            
+                    <label for="sex"><strong>Gender (M or F)</strong></label>
+                    <input type="text" placeholder="Enter your gender" name="sex" pattern="M|F" required>
+
+                </div>
+                <button type="submit">Login</button>
+            </div>
+          </form>
+
+    </body>
+
+</html>

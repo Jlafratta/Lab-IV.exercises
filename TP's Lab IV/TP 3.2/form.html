@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>LABORATORIO IV 2019</title>
+    <link rel="stylesheet" href="mystyles.css">
+
+</head>
+
+<body>
+
+    <h1>Contact Form</h1>
+
+    <form action="action.php" method="post">
+
+        <h4>Your basic info</h4>
+
+        <p>Name</p>
+        <input type="text" name="name" required >
+
+        <p>Email</p>
+        <input type="email" name="email" required>
+
+        <p>Password</p>
+        <input type="password" name="password" required>
+
+        <p>Birthday</p>
+        <input type="date" name="bday" min="1979-12-31" max="2019-01-01" required>
+
+        <br>
+        <br>
+
+        <span>Sex: </span>
+        <input type="radio" name="sex" value="male">Male
+        <input type="radio" name="sex" value="female">Female
+
+        <br>
+
+        <h4>Your profile</h4>
+
+        <p>About you</p>
+        <textarea name="aboutYou"  cols="41" rows="5"></textarea>
+
+        <label for="rol"><br> Role <br></label>
+        <select id="rol" name="user_rol">
+            <option value="dataBase">Data base</option>
+            <option value="design">Design</option>
+            <option value="bussines">Bussines</option>
+            <option value="unitTest">Unit test</option>
+            <option value="cloudDev">Cloud development</option>
+            <option value="webDev">Web development</option>
+        </select>
+
+        <p>Intesrests</p>
+        <input type="checkbox" name="DBase">Data Base
+        <input type="checkbox" name="Design">Design
+        <input type="checkbox" name="Bussines">Bussines
+        <input type="checkbox" name="UnitTest">Unit Test
+        <input type="checkbox" name="Cloud">Cloud development
+        <input type="checkbox" name="Web">Web Development
+
+        <br>
+
+        <button type="submit">Send</button>
+        <button type="reset">Reset</button>
+        
+
+
+
+
+    </form>
+    
+</body>
+
+</html>
